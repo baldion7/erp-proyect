@@ -32,6 +32,9 @@ const equipmentSchema=mongoose.Schema({
         type: Boolean,
         require:true
     },
-
+    comment:{
+        type: String,
+        require:true
+    }
 });
 module.exports=mongoose.model("Equipment", equipmentSchema)
